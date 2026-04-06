@@ -1,0 +1,99 @@
+ID,Name,Visit #,Date,"Taste 
+(20)","Portion 
+(10)","Presentation
+(20)","Service 
+(10)","Atmosphere
+(10)","Location
+(10)","Facilities
+(10)","Cleanliness 
+(10)",Cost,"Overall 
+(100)",Rank,,Key,,,Statistics,,,
+1,"The Plough, Upper Dicker",1,May-17,15,8,10,3,3,4,2,5,£££,50,68,,COST GUIDE,(Main + Drink),,No. of establistments visited:,,,75
+2,"The Beachy Head, Eastbourne",1,May-17,14,6,12,6,8,9,9,9,£££,73,21,,£,£0 - £10,,No. of total visits:,,,86
+3,"Sussex Ox, Milton Street",1,Dec-17,9,8,11,6,3,8,7,8,£££,60,56,,££,£11 - £15,,,,,
+4,"Lamb Inn, Hooe",1,Jan-18,18,5,18,9,9,5,7,8,££££,79,8,,£££,£16 - £20,,No. of Platinum Visits:,,,11
+5,"Smugglers Inn, Pevensey",1,Feb-18,11,7,7,3,2,7,2,3,££,42,77,,££££,£21 - £25,,No. of Gold Visits,,,57
+6,"Ye Olde Pumphouse, Hastings",1,Mar-18,4,8,5,4,3,7,6,3,£,40,79,,£££££,£26+,,No. of Silver Visits,,,17
+7,"The Pilot Inn, Eastbourne",1,Mar-18,12,6,13,2,1,9,7,7,££££,57,62,,,,,No. of Bronze Visits,,,1
+8,"The Ship Inn, Eastbourne",1,Apr-18,13,8,15,8,8,6,5,7,£££,70,31,,RANK WORTH,,,,,,
+9,"The Tiger Inn, East Dean",1,May-18,8,5,4,6,6,9,8,3,£££,49,72,,Platinum,76-100,,VISITS BY YEAR,,,
+10,"Eight Bells, Jevington",1,Jun-18,12,9,11,6,7,9,8,5,£££,67,37,,Gold,51-75,,2017,,,3
+11,"Berwick Inn, Berwick",1,Jul-18,12,6,18,9,9,8,7,5,££££,74,14,,Silver,26-50,,2018,,,12
+12,"Lamb Inn, Hooe",2,Aug-18,14,7,15,7,7,5,7,8,££££,70,31,,Bronze,0-25,,2019,,,11
+13,"The Gun, Gun Hill",1,Sep-18,19,9,19,6,5,10,9,9,££££,86,1,,,,,2020,,,2
+14,"The Yew Tree, Chalvington",1,Oct-18,14,5,15,6,6,10,3,2,££,61,51,,,,,2021,,,6
+15,"Wheatsheaf Inn, Willingdon",1,Dec-18,13,7,15,7,7,7,2,4,££££,62,50,,,,,2022,,,6
+16,"The Giants Rest, Wilmington",1,Jan-19,7,5,10,7,7,7,2,4,£££,49,72,,,,,2023,,,15
+17,"Plough and Harrow, Litlington",1,Feb-19,16,10,16,10,8,9,7,9,££££,85,2,,,,,2024,,,12
+18,"The Cricketers Arms, Berwick",1,Mar-19,7,7,12,3,6,9,4,4,££££,52,65,,,,,2025,,,14
+19,"Ye Olde Smugglers Inn, Alfriston",1,Apr-19,19,8,18,6,8,8,7,9,£££,83,4,,,,,2026,,,3
+20,"The Old Oak Inn, Caneheath",1,May-19,14,7,12,3,6,10,7,5,££££,64,44,,,,,,,,
+21,"The Six Bells, Chiddingly",1,Jun-19,13,5,17,5,8,10,3,8,££,69,34,,,,,PLATINUM PUBS,,,
+22,"Counting House, Eastbourne",1,Jul-19,14,7,18,5,7,4,3,6,£££,64,44,,,,,"The Gun, Gun Hill",,1,86
+23,"The Yew Tree Inn, Arlington",1,Aug-19,15,10,15,4,6,9,6,6,£££,71,29,,,,,"White Hart, Netherfield",,2,85
+24,"Roebuck Inn, Laughton",1,Sep-19,7,6,11,6,4,5,4,8,£££,51,66,,,,,"Plough and Harrow, Litlington",,2,85
+25,"The Red Lion, Willingdon",1,Nov-19,8,6,16,6,4,8,4,8,£££,60,56,,,,,"Ye Olde Smugglers Inn, Alfriston",,4,83
+26,"Beachy Head Pub, Eastbourne",2,Dec-19,17,6,16,8,4,9,9,9,£££,78,9,,,,,"Queens Head, Sedlescombe",,5,83
+27,"The Dolphin, Eastbourne",1,Feb-20,16,8,16,9,8,6,3,9,£££,75,12,,,,,"The Bull Inn, Battle",,6,82
+28,"The Cuckmere Inn, Exceat",1,Aug-20,15,7,15,7,7,10,8,8,£££,77,11,,,,,"The Suirrel Inn, Battle",,7,82
+29,"Eight Bells, Jevington",2,Apr-21,13,7,16,7,5,9,7,8,££££,72,25,,,,,"Lamb Inn, Hooe",,8,79
+30,"Royal Oak & Castle, Pevensey",1,May-21,3,3,3,1,1,8,3,2,£££,24,81,,,,,"Beachy Head Pub, Eastbourne",,9,78
+31,"Friday Street Farm, Eastbourne",1,Jul-21,12,7,10,9,9,4,6,7,£££,63,49,,,,,"The Star, Alfriston",,10,78
+32,"The Cuckmere Inn, Exceat",2,Aug-21,13,7,15,4,4,10,3,3,£££,59,58,,,,,"The Cuckmere Inn, Exceat",,11,77
+33,"The Red Lion, Hooe",1,Oct-21,7,6,10,5,6,6,4,8,£££,50,68,,,,,,,,
+34,"The Star, Alfriston",1,Dec-21,17,8,19,4,6,8,8,8,£££££,78,9,,,,,TO VISIT,,,
+35,"The Rainbow (re:23), Eastbourne*",2,Feb-22,16,8,15,9,6,6,6,7,£££,73,21,,,,,"The Bear, Burwash",,,
+36,"The Stage Door, Eastbourne ",1,Apr-22,16,9,13,6,8,8,8,5,£££,73,21,,,,,"The George Inn, Robertsbridge",,,
+37,"The Marina Fountain, Hastings",1,May-22,14,6,11,8,6,8,6,7,£££,66,41,,,,,"The Red Lion, Rye",,,
+38,"Rose & Crown, Cuckfield",1,Aug-22,11,6,8,6,6,7,8,6,££££,58,60,,,,,"Three Oaks, Hastings",,,
+39,"Castle Inn, Pevensey Bay",1,Nov-22,15,7,12,6,3,4,6,8,£££,61,51,,,,,,,,
+40,"Blacksmiths Inn, Ninfield",1,Dec-22,15,9,14,9,7,6,6,7,£££,73,21,,,,,,,,
+41,"Bo Peep, St Leonards",1,Jan-23,12,10,14,7,8,7,6,8,££,72,25,,,,,,,,
+42,"Eight Bells, Jevington",3,Jan-23,15,8,14,10,6,8,6,7,££££,74,14,,,,,,,,
+43,"The New Inn, Westfield",1,Feb-23,15,10,17,6,6,8,5,3,£££,70,31,,,,,,,,
+44,"Ash Tree Inn, Ashburnham",1,Mar-23,10,8,9,8,7,9,7,9,££££,67,37,,,,,,,,
+45,"The Bull Inn, Bulverhythe",1,Apr-23,9,5,8,4,6,2,8,8,££,50,68,,,,,,,,
+46,"The Bulls Head, Boreham Street",1,May-23,3,6,7,2,5,6,4,3,£££,36,80,,,,,,,,
+47,"Black Horse, Telham",1,Jun-23,11,8,11,7,5,7,5,7,£££,61,51,,,,,,,,
+48,"The Bull Inn, Battle",1,Jul-23,15,9,16,10,9,10,5,8,££££,82,6,,,,,,,,
+49,"Hollington Oak, St Leonards",1,Sep-23,14,8,15,8,5,5,8,9,££,72,25,,,,,,,,
+50,"The Merrie Harriers, Cowbeech",1,Sep-23,7,4,7,6,2,7,6,6,££££,45,74,,,,,,,,
+51,"Swan Inn, Dallington",1,Oct-23,15,8,12,7,5,8,4,6,££££,65,42,,,,,,,,
+52,"Wheatsheaf Inn, Bexhill",1,Nov-23,17,8,18,8,7,6,8,2,£££,74,14,,,,,,,,
+53,"Lamb Inn, Hooe",3,Nov-23,14,7,16,4,6,8,8,8,££££,71,29,,,,,,,,
+54,"The Red Lion, Stone Cross",1,Dec-23,7,8,12,7,3,4,4,5,£££,50,68,,,,,,,,
+55,"Argyle Arms, Oxford Circus",1,Dec-23,17,8,15,5,4,10,8,8,££££,75,12,,,,,,,,
+56,"Friday Street Farm, Eastbourne",2,Jan-24,7,6,8,6,5,4,8,7,££££,51,66,,,,,,,,
+57,"The Wheel Inn, Burwash",1,Jan-24,14,8,6,6,8,7,8,7,£££,64,44,,,,,,,,
+58,"The Squirrel Inn, Battle",1,Feb-24,18,9,16,10,6,6,8,9,£££,82,6,,,,,,,,
+59,"The Dickens Inn, London",1,Feb-24,15,8,16,6,4,9,3,3,££££,64,44,,,,,,,,
+60,"The Crown, Hastings",1,Mar-24,17,8,18,6,6,7,6,6,££££,74,14,,,,,,,,
+61,"Queens Head, Sedlescombe",1,Jun-24,16,10,19,5,6,9,10,8,££££,83,4,,,,,,,,
+62,"The Harrow Inn, Hastings",1,Jul-24,14,7,13,4,3,6,6,5,£££,58,60,,,,,,,,
+63,"The Ram Inn, Firle",1,Jul-24,8,8,16,6,8,10,4,7,££££,67,37,,,,,,,,
+64,"The Star Inn, Old Heathfield",1,Aug-24,9,6,13,4,7,8,6,6,££££,59,58,,,,,,,,
+65,"Bohemian, Eastbourne",1,Nov-24,12,6,10,3,4,9,9,8,££££,61,51,,,,,,,,
+66,"Lazy Fox, Mark Cross",1,Dec-24,9,8,11,6,3,4,8,7,££££,56,64,,,,,,,,
+67,"The Coal Hole, London",1,Dec-24,18,8,16,6,4,9,2,7,£££,70,31,,,,,,,,
+68,"Two Sawyers, Pett",1,Jan-25,12,8,16,5,3,8,7,8,£££,67,37,,,,,,,,
+69,"Picture Playhouse, Bexhill",1,Jan-25,9,6,6,4,4,5,8,3,£,45,74,,,,,,,,
+70,"The Princess of Wales, Blackheath",1,Feb-25,16,6,11,3,6,6,6,7,££££,61,51,,,,,,,,
+71,"The Half Moon, Plumpton",1,Mar-25,15,7,16,7,4,6,6,7,£££,68,35,,,,,,,,
+72,"The New Inn, Winchelsea",1,Apr-25,13,8,15,6,8,10,6,8,£££,74,14,,,,,,,,
+73,"Picture Playhouse, Bexhill",2,Apr-25,8,4,6,8,4,5,6,4,£,45,74,,,,,,,,
+74,"The Juggs, Kingston ",1,May-25,14,9,15,5,8,10,7,6,££££,74,14,,,,,,,,
+75,"Robin Hood Inn, Icklesham",1,Jun-25,17,8,13,5,2,7,7,8,£££,67,42,,,,,,,,
+76,"The Anchor Inn, Barcombe Mills",1,Jul-25,7,5,7,3,2,10,6,2,££££,42,77,,,,,,,,
+77,"The Bull, Newick",1,Aug-25,15,9,13,7,6,7,6,9,££££,72,25,,,,,,,,
+78,"The George, Nunny Catch",1,Sep-25,16,6,10,8,6,9,6,9,££££,70,14,,,,,,,,
+79,"The Crown, Wells",1,Sep-25,7,6,9,8,4,9,7,7,££££,57,62,,,,,,,,
+80,"The White Hart, Netherfield",1,Oct-25,19,8,16,5,9,9,8,10,£££££,84,2,,,,,,,,
+81,"Saleshurst Halt, Robertsbridge",1,Nov-25,14,8,12,6,6,7,5,6,££££,64,48,,,,,,,,
+82,"The White Dog, Robertsbridge",1,Dec-25,16,6,16,7,7,8,8,7,££££,75,12,,,,,,,,
+83,"The Porcupine, London",1,Dec-25,9,8,14,1,4,8,4,2,££££,50,,,,,,,,,
+84,"The Cock Inn, Lewes",1,Jan-26,18,8,17,6,6,3,5,8,£££,71,,,,,,,,,
+85,"The Gypsy Moth, Greenwich",1,Feb-26,7,8,13,4,5,10,7,4,££££,58,,,,,,,,,
+86,"Browns, Soho, London",1,Mar-26,15,7,12,3,6,8,8,8,££££,67,,,,,,,,,
+87,,,Apr-26,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,*The Rainbow was a revisit to a pub visited before but has since changed owners and name.,,,,,,,,,,,,,,,,,,,,,
