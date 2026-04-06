@@ -7,21 +7,21 @@ title: Pub Review Dashboard
 <script>mermaid.initialize({startOnLoad:true});</script>
 
 <style>
-  :root { --primary: #005f73; --bg: #f8f9fa; --card-bg: #ffffff; }
+  :root { --primary: #005f73; --bg: #f8f9fa; }
   body { background-color: var(--bg); font-family: "Segoe UI", Roboto, Helvetica, sans-serif; }
   
   .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 20px 0; }
   .stat-card { 
-    background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; 
+    background: white; padding: 20px; border-radius: 12px; text-align: center; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 5px solid var(--primary);
   }
 
   .chart-section { 
-    background: var(--card-bg); padding: 25px; border-radius: 12px; 
+    background: white; padding: 25px; border-radius: 12px; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 30px; 
   }
 
-  .pub-table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; margin-top: 20px; }
+  .pub-table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; }
   .pub-table th { background: var(--primary); color: white; padding: 15px; text-align: left; }
   .pub-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
   .total-cell { font-weight: bold; color: var(--primary); }
@@ -38,7 +38,7 @@ title: Pub Review Dashboard
 <div class="chart-section">
   <h3 style="margin-top:0; color:var(--primary);">📊 Scoring Weights</h3>
   <div class="mermaid">
-  pie title 100% Score Weightings
+  pie title 100% Score Breakdown
     "Taste" : 20
     "Presentation" : 20
     "Atmosphere" : 10
@@ -63,14 +63,14 @@ title: Pub Review Dashboard
   </thead>
   <tbody>
     {% for pub in site.data.pubs limit:20 %}
-      {% assign t = pub["Taste \n(20)"] | plus: 0 %}
-      {% assign p = pub["Portion \n(10)"] | plus: 0 %}
-      {% assign pr = pub["Presentation\n(20)"] | plus: 0 %}
-      {% assign s = pub["Service \n(10)"] | plus: 0 %}
-      {% assign a = pub["Atmosphere\n(10)"] | plus: 0 %}
-      {% assign l = pub["Location\n(10)"] | plus: 0 %}
-      {% assign f = pub["Facilities\n(10)"] | plus: 0 %}
-      {% assign c = pub["Cleanliness \n(10)"] | plus: 0 %}
+      {% assign t = pub.Taste | plus: 0 %}
+      {% assign p = pub.Portion | plus: 0 %}
+      {% assign pr = pub.Presentation | plus: 0 %}
+      {% assign s = pub.Service | plus: 0 %}
+      {% assign a = pub.Atmosphere | plus: 0 %}
+      {% assign l = pub.Location | plus: 0 %}
+      {% assign f = pub.Facilities | plus: 0 %}
+      {% assign c = pub.Cleanliness | plus: 0 %}
       {% assign total = t | plus: p | plus: pr | plus: s | plus: a | plus: l | plus: f | plus: c %}
       <tr>
         <td><strong>{{ pub.Name }}</strong></td>
