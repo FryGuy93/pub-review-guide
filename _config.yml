@@ -1,13 +1,12 @@
-# Site settings
 title: Ian and Ellie's Pub Reviews
 description: A definitive guide to Sussex establishments and beyond.
-baseurl: "/pub-reviews" # This matches your repository name
-url: "" # Leave this blank for now
+baseurl: "/pub-reviews"
+url: ""
 
-# Build settings
+# Use the built-in theme instead of the remote one
 theme: minima
-remote_theme: jekyll/minima
 
-# Data settings
-csv_reading:
-  separator: ","
+# Plugins that help GitHub Pages work better
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
