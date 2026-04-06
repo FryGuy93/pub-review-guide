@@ -1,0 +1,13 @@
+# Site settings
+title: Ian and Ellie's Pub Reviews
+description: A definitive guide to Sussex establishments and beyond.
+baseurl: "/pub-reviews" # This matches your repository name
+url: "" # Leave this blank for now
+
+# Build settings
+theme: minima
+remote_theme: jekyll/minima
+
+# Data settings
+csv_reading:
+  separator: ","
