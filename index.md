@@ -15,37 +15,25 @@ title: Pub Review Dashboard
     background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: center; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 5px solid var(--primary);
   }
-  .stat-card h3 { font-size: 0.7rem; color: #666; text-transform: uppercase; margin: 0; }
-  .stat-card p { font-size: 2rem; font-weight: bold; color: var(--primary); margin: 5px 0 0; }
 
   .chart-section { 
     background: var(--card-bg); padding: 25px; border-radius: 12px; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 30px; 
   }
 
-  .table-container { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-  table { width: 100%; border-collapse: collapse; }
-  th { background: var(--primary); color: white; padding: 15px; text-align: left; font-size: 0.9rem; }
-  td { padding: 12px 15px; border-bottom: 1px solid #eee; font-size: 0.9rem; }
-  tr:hover { background-color: #f8f9fa; }
+  /* Table styling to make it look professional */
+  .pub-table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; margin-top: 20px; }
+  .pub-table th { background: var(--primary); color: white; padding: 15px; text-align: left; }
+  .pub-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
   .total-cell { font-weight: bold; color: var(--primary); }
 </style>
 
-# 🍻 Ian & Ellie's Pub Odyssey
+# 🍻 Ian & Ellie's Pub Reviews
 
 <div class="stats-grid">
-  <div class="stat-card">
-    <h3>Total Visits</h3>
-    <p>{{ site.data.pubs.size }}</p>
-  </div>
-  <div class="stat-card">
-    <h3>Top Score</h3>
-    <p>86%</p>
-  </div>
-  <div class="stat-card">
-    <h3>Avg Score</h3>
-    <p>64%</p>
-  </div>
+  <div class="stat-card"><h3>Total Visits</h3><p>{{ site.data.pubs.size }}</p></div>
+  <div class="stat-card"><h3>Top Score</h3><p>86%</p></div>
+  <div class="stat-card"><h3>Avg Score</h3><p>64%</p></div>
 </div>
 
 <div class="chart-section">
@@ -64,22 +52,38 @@ title: Pub Review Dashboard
 </div>
 
 ### 🏆 The Leaderboard
-<div class="table-container">
-| Establishment | Date | Taste | Total |
-| :--- | :--- | :--- | :--- |
-{% for pub in site.data.pubs limit:20 %}
-  {% assign t = pub["Taste \n(20)"] | plus: 0 %}
-  {% assign p = pub["Portion \n(10)"] | plus: 0 %}
-  {% assign pr = pub["Presentation\n(20)"] | plus: 0 %}
-  {% assign s = pub["Service \n(10)"] | plus: 0 %}
-  {% assign a = pub["Atmosphere\n(10)"] | plus: 0 %}
-  {% assign l = pub["Location\n(10)"] | plus: 0 %}
-  {% assign f = pub["Facilities\n(10)"] | plus: 0 %}
-  {% assign c = pub["Cleanliness \n(10)"] | plus: 0 %}
-  {% assign total = t | plus: p | plus: pr | plus: s | plus: a | plus: l | plus: f | plus: c %}
-| **{{ pub.Name }}** | {{ pub.Date }} | {{ t }}/20 | <span class="total-cell">{{ total }}%</span> |
-{% endfor %}
-</div>
+
+<table class="pub-table">
+  <thead>
+    <tr>
+      <th>Establishment</th>
+      <th>Date</th>
+      <th>Taste</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for pub in site.data.pubs limit:20 %}
+      {% comment %} Convert row to an array to bypass header name issues {% endcomment %}
+      {% assign row = pub %}
+      {% assign t = row[4] | plus: 0 %}
+      {% assign p = row[5] | plus: 0 %}
+      {% assign pr = row[6] | plus: 0 %}
+      {% assign s = row[7] | plus: 0 %}
+      {% assign a = row[8] | plus: 0 %}
+      {% assign l = row[9] | plus: 0 %}
+      {% assign f = row[10] | plus: 0 %}
+      {% assign c = row[11] | plus: 0 %}
+      {% assign total = t | plus: p | plus: pr | plus: s | plus: a | plus: l | plus: f | plus: c %}
+      <tr>
+        <td><strong>{{ row[1] }}</strong></td>
+        <td>{{ row[3] }}</td>
+        <td>{{ t }}/20</td>
+        <td class="total-cell">{{ total }}%</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 <br>
 
