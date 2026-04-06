@@ -3,40 +3,57 @@ layout: home
 title: Pub Review Dashboard
 ---
 
-# 🍻 Ian & Ellie's Pub Reviews
+<style>
+  :root { --primary: #005f73; --bg: #f8f9fa; --card-bg: #ffffff; }
+  
+  body { background-color: var(--bg); font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin: 20px 0; }
+  
+  .stat-card { 
+    background: var(--card-bg); 
+    padding: 20px; 
+    border-radius: 12px; 
+    text-align: center; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--primary);
+  }
+  
+  .stat-card h3 { font-size: 0.8rem; color: #666; text-transform: uppercase; margin-bottom: 5px; }
+  .stat-card p { font-size: 1.8rem; font-weight: bold; color: var(--primary); margin: 0; }
 
-We've visited **{{ site.data.pubs.size }}** establishments. Here is the leaderboard based on our 8-category scoring system.
+  .chart-section { 
+    background: var(--card-bg); 
+    padding: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+    margin-bottom: 30px; 
+  }
 
-<div style="display: flex; gap: 20px; margin-bottom: 30px;">
-  <div style="background: #f0f4f8; padding: 20px; border-radius: 10px; flex: 1; text-align: center;">
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+  th { background: var(--primary); color: white; padding: 15px; text-align: left; }
+  td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+  tr:hover { background-color: #f1f1f1; }
+</style>
+
+# 🍻 Ian & Ellie's Pub Odyssey
+
+<div class="stats-grid">
+  <div class="stat-card">
     <h3>Total Visits</h3>
-    <p style="font-size: 24px; font-weight: bold; color: #005f73;">{{ site.data.pubs.size }}</p>
+    <p>{{ site.data.pubs.size }}</p>
+  </div>
+  <div class="stat-card">
+    <h3>Top Rated</h3>
+    <p>86%</p>
   </div>
 </div>
 
-### 🏆 Calculated Rankings
-| Pub Name | Date | Taste | Atmos | Total Score |
-| :--- | :--- | :--- | :--- | :--- |
-{% for pub in site.data.pubs %}
-  {% assign t = pub.Taste | plus: 0 %}
-  {% assign p = pub.Portion | plus: 0 %}
-  {% assign pr = pub.Presentation | plus: 0 %}
-  {% assign s = pub.Service | plus: 0 %}
-  {% assign a = pub.Atmosphere | plus: 0 %}
-  {% assign l = pub.Location | plus: 0 %}
-  {% assign f = pub.Facilities | plus: 0 %}
-  {% assign c = pub.Cleanliness | plus: 0 %}
-  {% assign total = t | plus: p | plus: pr | plus: s | plus: a | plus: l | plus: f | plus: c %}
-| **{{ pub.Name }}** | {{ pub.Date }} | {{ t }}/20 | {{ a }}/10 | **{{ total }}/100** |
-{% endfor %}
-
-### 📊 Scoring Weights
+<div class="chart-section">
+  <h3>🏆 Score Distribution</h3>
 ```mermaid
-pie title How we calculate the 100%
-    "Taste & Presentation" : 40
-    "Portion" : 10
-    "Service" : 10
+pie title Category Weightings
+    "Taste" : 20
+    "Presentation" : 20
     "Atmosphere" : 10
-    "Location" : 10
-    "Facilities" : 10
-    "Cleanliness" : 10
+    "Other" : 50
