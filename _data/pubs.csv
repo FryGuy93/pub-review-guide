@@ -1,12 +1,4 @@
-ID,Name,Visit #,Date,"Taste 
-(20)","Portion 
-(10)","Presentation
-(20)","Service 
-(10)","Atmosphere
-(10)","Location
-(10)","Facilities
-(10)","Cleanliness 
-(10)"
+ID,Name,Visit,Date,Taste,Portion,Presentation,Service,Atmosphere,Location,Facilities,Cleanliness,Cost,Overall,Rank
 1,"The Plough, Upper Dicker",1,May-17,15,8,10,3,3,4,2,5
 2,"The Beachy Head, Eastbourne",1,May-17,14,6,12,6,8,9,9,9
 3,"Sussex Ox, Milton Street",1,Dec-17,9,8,11,6,3,8,7,8
